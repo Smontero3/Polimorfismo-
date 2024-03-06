@@ -1,0 +1,20 @@
+public class Corolla : IVehículoToyota
+{
+    private string _modelo;
+
+    public Corolla(string modelo)
+    {
+        _modelo = modelo;
+    }
+
+    public string Modelo => _modelo;
+
+    public string Arrancar()
+    {
+        return $"El Corolla {_modelo} está arrancando";
+    }
+
+    public string Detener()
+    {
+        return $"El Corolla {_modelo} se está deteniendo";
+    }
